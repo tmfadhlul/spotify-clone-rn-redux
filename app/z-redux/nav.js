@@ -1,4 +1,4 @@
-import RootNavigator from '../navigators/RootNavigator'
+import RootNavigator from '../z-navigators/RootNavigator'
 
 const initialState = RootNavigator.router.getStateForAction(
   RootNavigator.router.getActionForPathAndParams('Main')

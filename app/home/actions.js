@@ -1,12 +1,11 @@
-export function allContacts(){
-    // data simulation
-    const contacts= [
-        { name: 'Bambang', address: 'Jakarta' },
-        { name: 'Syahrini', address: 'Cilacap' }
-    ]
+import axios from 'axios';
 
+export function allTracks(){
     return {
-        type: 'ALL_CONTACTS',
-        payload: contacts
+        type: 'ALL_TRACKS',
+        payload: axios({
+            method: 'GET',
+            url: 'http://localhost:8000/api/music/'
+        })
     }
 }

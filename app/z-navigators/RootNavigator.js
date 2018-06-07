@@ -1,5 +1,3 @@
-import React, { Component } from 'react';
-import { Text } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import { LoginScreen, RegisterScreen, WelcomeScreen } from '../welcome/screens/index';
@@ -70,7 +68,7 @@ const BottomStack = createBottomTabNavigator(
 const RootNavigator = createStackNavigator(
   {
     Main: {
-      screen: BottomStack,
+      screen: WelcomeScreen,
       navigationOptions: {
         header: null
       }

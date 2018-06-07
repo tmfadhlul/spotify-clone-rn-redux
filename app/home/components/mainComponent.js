@@ -52,18 +52,11 @@ export default class MainComponent extends Component {
                                         <View>
                                             <Text style={styles.contentTitle}>{item.title}</Text>
                                             <View >
-                                                {/* <FlatList
-                                                    horizontal={true}
-                                                    data={this.state.genre}
-                                                    renderItem={({ item }) =>
-                                                        <View style={{marginHorizontal: 75}} >
-                                                        {console.log(item.id)} */}
-                                                            <Image
-                                                                style={styles.contentImg}
-                                                                source={item.source}
-                                                            />
-                                                        {/* </View>
-                                                    } /> */}
+                                                <Image
+                                                    style={styles.contentImg}
+                                                    source={item.source}
+                                                />
+
                                             </View>
                                             <Text style={styles.contentDesc}>{item.desc}</Text>
                                         </View>}
