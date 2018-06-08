@@ -16,7 +16,7 @@ export default class WelcomeScreen extends Component {
             <View style={{ flex: 1 }} >
                 <WelcomeHeader />
                 <Slider />
-                <WelcomeBtn nav={this.props.navigation.navigate} />
+                <WelcomeBtn nav={this.props.navigation.navigate} {...this.props} />
                 <ImageBackground source={require('../../src/raw/backgroud.jpg')} style={{ width: Width + 25, height: Height + 50, left: '-2%', zIndex: -10, position: 'absolute' }} />
             </View>
         )

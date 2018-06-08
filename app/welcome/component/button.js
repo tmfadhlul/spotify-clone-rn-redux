@@ -12,7 +12,7 @@ export class WelcomeBtn extends Component {
                     <Text style={styles.textRegist}>CREATE ACCOUNT</Text>
                 </Button>
                 <Text style={styles.text}>Already a user ?</Text>
-                <Button rounded onPress={() => this.props.nav('Login') } style={styles.buttonLogin}>
+                <Button rounded onPress={() => this.props.nav('Login', {...this.props}) } style={styles.buttonLogin}>
                     <Text style={styles.textLogin}>LOG IN</Text>
                 </Button>
             </View >

@@ -35,4 +35,4 @@ const tabPlaylistReducer = (state = initialState, action) => {
     }
 }
 
-export default contactsReducer
+export default tabPlaylistReducer
