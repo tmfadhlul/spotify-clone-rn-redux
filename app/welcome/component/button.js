@@ -8,11 +8,11 @@ export class WelcomeBtn extends Component {
     render() {
         return (
             <View style={{ flex: 1, top: '15%' }} >
-                <Button rounded onPress={() => this.props.nav('Register')} style={styles.buttonRegist}>
+                <Button rounded onPress={() => this.props.navigation.navigate('Register')} style={styles.buttonRegist}>
                     <Text style={styles.textRegist}>CREATE ACCOUNT</Text>
                 </Button>
                 <Text style={styles.text}>Already a user ?</Text>
-                <Button rounded onPress={() => this.props.nav('Login', {...this.props}) } style={styles.buttonLogin}>
+                <Button rounded onPress={() => this.props.navigation.navigate('Login') } style={styles.buttonLogin}>
                     <Text style={styles.textLogin}>LOG IN</Text>
                 </Button>
             </View >

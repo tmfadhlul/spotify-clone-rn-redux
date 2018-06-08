@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, FlatList, Image, TouchableOpacity } from 'react-native'
-import { View, Button } from 'native-base';
+import { View, Button, Content } from 'native-base';
 import { NavigationActions } from 'react-navigation';
 import LinearGradient from "react-native-linear-gradient";
 import { connect } from 'react-redux'
@@ -17,7 +17,7 @@ class Playlist extends Component {
 
     render() {
         return (
-            <View>
+            <Content>
                 <Button rounded onPress={() => (this.props.navigation.navigate('Premium'))} style={styles.buttonRegist}>
                     <Text style={styles.textRegist}>CREATE</Text>
                 </Button>
@@ -44,7 +44,7 @@ class Playlist extends Component {
                     }
                     keyExtractor={item => item.id.toString()}
                 />
-            </View>
+            </Content>
         )
     }
 };

@@ -6,6 +6,7 @@ import Swiper from 'react-native-swiper';
 
 import { Slider, WelcomeHeader } from '../component/zIndex';
 import { WelcomeBtn } from '../component/button';
+import LightVideo from "../../src/raw/roomies.mp4";
 
 const Width = Dimensions.get('window').width
 const Height = Dimensions.get('window').height
@@ -14,10 +15,12 @@ export default class WelcomeScreen extends Component {
     render() {
         return (
             <View style={{ flex: 1 }} >
-                <WelcomeHeader />
-                <Slider />
-                <WelcomeBtn nav={this.props.navigation.navigate} {...this.props} />
-                <ImageBackground source={require('../../src/raw/backgroud.jpg')} style={{ width: Width + 25, height: Height + 50, left: '-2%', zIndex: -10, position: 'absolute' }} />
+                <Video repeat source={LightVideo} resizeMode="cover" style={StyleSheet.absoluteFill} />
+                <View style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0.3)' }}>
+                    <WelcomeHeader />
+                    <Slider />
+                    <WelcomeBtn {...this.props} />
+                </View>
             </View>
         )
     }
