@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, FlatList, Image, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, FlatList, Image, TouchableOpacity, ActivityIndicator, Dimensions} from 'react-native'
 import { View, Button, Content } from 'native-base';
 import { NavigationActions } from 'react-navigation';
 import LinearGradient from "react-native-linear-gradient";
@@ -21,29 +21,35 @@ class Playlist extends Component {
                 <Button rounded onPress={() => (this.props.navigation.navigate('Premium'))} style={styles.buttonRegist}>
                     <Text style={styles.textRegist}>CREATE</Text>
                 </Button>
-                <FlatList
-                    numColumns={1}
-                    extraData={this.state}
-                    data={this.props.playlists.results}
-                    refreshing={this.props.playlists.isLoading}
-                    onRefresh={this.getData}
-                    renderItem={(item) =>
-                        <View style={{ flex: 5, flexDirection: 'row', height: 150, marginVertical: 8, marginHorizontal: 10, }} >
-                            <Image
-                                style={{ width: '80%', height: '100%', flex: 2 }}
-                                source={{uri: item.item.artwork}}
-                            />
-                            <View style={{ marginLeft: 15, flex: 3 }} >
-                                <View style={{ marginTop: 55 }} >
-                                    <Text style={{ color: 'white', fontSize: 18 }} >{item.item.title}</Text>
-                                    <Text style={{ color: 'white', fontSize: 14 }}>From {item.item.artist}</Text>
-                                    <Text style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12 }} >Subscribe premium for this play...</Text>
+                { this.props.playlists.isLoading ?
+                    <View style={{height: Dimensions.get('window').height / 1.5 ,justifyContent: 'center' }}>
+                        <ActivityIndicator style={{alignSelf: 'center',}} size="large" color="#00ff00" />
+                    </View>
+                    :
+                    <FlatList
+                        numColumns={1}
+                        extraData={this.state}
+                        data={this.props.playlists.results}
+                        refreshing={this.props.playlists.isLoading}
+                        onRefresh={this.getData}
+                        renderItem={(item) =>
+                            <View style={{ flex: 5, flexDirection: 'row', height: 150, marginVertical: 8, marginHorizontal: 10, }} >
+                                <Image
+                                    style={{ width: '80%', height: '100%', flex: 2 }}
+                                    source={{ uri: item.item.artwork }}
+                                />
+                                <View style={{ marginLeft: 15, flex: 3 }} >
+                                    <View style={{ marginTop: 55 }} >
+                                        <Text style={{ color: 'white', fontSize: 18 }} >{item.item.title}</Text>
+                                        <Text style={{ color: 'white', fontSize: 14 }}>From {item.item.artist}</Text>
+                                        <Text style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12 }} >Subscribe premium for this play...</Text>
+                                    </View>
                                 </View>
                             </View>
-                        </View>
-                    }
-                    keyExtractor={item => item.id.toString()}
-                />
+                        }
+                        keyExtractor={item => item.id.toString()}
+                    />
+                } 
             </Content>
         )
     }
@@ -73,16 +79,6 @@ const styles = StyleSheet.create({
     },
     textRegist: {
         fontWeight: 'bold',
-    },
-    content: {
-        flex: 1,
-        position: 'relative',
-        height: 100,
-        margin: 10,
-        backgroundColor: 'white',
-        paddingHorizontal: 20,
-        paddingVertical: 20,
-        borderRadius: 5,
     }
 }
 )
