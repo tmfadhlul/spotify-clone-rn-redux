@@ -5,7 +5,7 @@ export function allTracks(){
         type: 'ALL_TRACKS',
         payload: axios({
             method: 'GET',
-            url: 'http://localhost:8000/api/music/'
+            url: 'https://9999abac.ngrok.io/api/music'
         })
     }
 }

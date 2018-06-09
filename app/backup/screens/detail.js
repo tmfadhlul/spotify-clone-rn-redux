@@ -1,6 +1,6 @@
 /**
  * Sample React Native TodoDetail
- * https://github.com/facebook/react-native
+ * s://github.com/facebook/react-native
  * @flow
  */
 

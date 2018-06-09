@@ -20,7 +20,6 @@ import store from './app/z-redux/store';
 
 const navReducer = createNavigationReducer(RootNavigator);
 
-// Note: createReactNavigationReduxMiddleware must be run before createNavigationPropConstructor
 const middleware = createReactNavigationReduxMiddleware(
   "root",
   state => state.nav,
@@ -48,11 +47,6 @@ const mapStateToProps = (state) => ({
 });
 
 const AppWithNavigationState = connect(mapStateToProps)(App);
-
-// const store = createStore(
-//   appReducer,
-//   applyMiddleware(middleware),
-// );
 
 export default class Root extends React.Component {
   render() {
