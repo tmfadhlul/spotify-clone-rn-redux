@@ -26,7 +26,7 @@ export default class Slider extends Component {
                     style={styles.wrapper}
                 >
                     {this.state.content.map((element, index) =>
-                        <View style={styles.wrapper} >
+                        <View key={index} style={styles.wrapper} >
                             <Text style={styles.title} >{element.title}</Text>
                             <Text style={styles.desc} >{element.desc}</Text>
                         </View>

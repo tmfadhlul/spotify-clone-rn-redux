@@ -16,6 +16,7 @@ class Playlist extends Component {
     state = { selected: (new Map(): Map<string, boolean>) };
 
     render() {
+        console.log(this.props)
         return (
             <Content>
                 <Button rounded onPress={() => (this.props.navigation.navigate('Premium'))} style={styles.buttonRegist}>
@@ -41,7 +42,7 @@ class Playlist extends Component {
                                 <View style={{ marginLeft: 15, flex: 3 }} >
                                     <View style={{ marginTop: 55 }} >
                                         <Text style={{ color: 'white', fontSize: 18 }} >{item.item.title}</Text>
-                                        <Text style={{ color: 'white', fontSize: 14 }}>From {item.item.artist}</Text>
+                                        <Text style={{ color: 'white', fontSize: 14 }}>From {item.item.artist.name}</Text>
                                         <Text style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12 }} >Subscribe premium for this play...</Text>
                                     </View>
                                 </View>

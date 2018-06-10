@@ -5,7 +5,7 @@ export function tabPlaylist(){
         type: 'TAB_PLAYLIST',
         payload: axios({
             method: 'GET',
-            url: 'https://9999abac.ngrok.io/api/music'
+            url: 'https://f09670ea.ngrok.io/api/music'
         })
     }
 }
