@@ -3,4 +3,4 @@ import App from './App';
 
 AppRegistry.registerComponent('Spotify', () => App);
 
-// console.disableYellowBox = true
+console.disableYellowBox = true

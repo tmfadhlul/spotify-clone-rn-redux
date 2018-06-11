@@ -14,7 +14,7 @@
     "react-native-linear-gradient": "^2.4.0",
     "react-native-swiper": "^1.5.13",
     "react-native-track-player": "^0.2.4",
-    "react-native-video": "^2.1.1",
+    "react-native-video": "^2.2.0",
     "react-navigation": "^2.0.4",
     "react-navigation-redux-helpers": "^1.1.2",
     "react-redux": "^5.0.7",
