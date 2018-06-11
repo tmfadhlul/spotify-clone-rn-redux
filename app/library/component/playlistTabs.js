@@ -37,7 +37,7 @@ class Playlist extends Component {
                             <View style={{ flex: 5, flexDirection: 'row', height: 150, marginVertical: 8, marginHorizontal: 10, }} >
                                 <Image
                                     style={{ width: '80%', height: '100%', flex: 2 }}
-                                    source={{ uri: item.item.artwork }}
+                                    source={{ uri: item.item.album.cover }}
                                 />
                                 <View style={{ marginLeft: 15, flex: 3 }} >
                                     <View style={{ marginTop: 55 }} >
