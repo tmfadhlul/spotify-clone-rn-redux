@@ -21,9 +21,6 @@ class Playlist extends Component {
         console.log(this.props)
         return (
             <Content>
-                <Button rounded onPress={() => (this.props.navigation.navigate('Premium'))} style={styles.buttonRegist}>
-                    <Text style={styles.textRegist}>CREATE</Text>
-                </Button>
                 { this.props.playlists.isLoading ?
                     <View style={{height: Dimensions.get('window').height / 1.5 ,justifyContent: 'center' }}>
                         <ActivityIndicator style={{alignSelf: 'center',}} size="large" color="#00ff00" />

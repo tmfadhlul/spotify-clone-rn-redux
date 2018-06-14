@@ -29,7 +29,6 @@ export default class Radio extends Component {
                 <Button rounded onPress={() => (this.props.navigation.navigate('Premium'))} style={styles.buttonRegist}>
                     <Text style={styles.textRegist}>CREATE</Text>
                 </Button>
-                <Text style={{ fontSize: 11, textAlign: 'left' }} >Coming soon</Text>
                 <FlatList
                     numColumns={1}
                     data={this.state.genre}

@@ -22,33 +22,47 @@ export default class LibraryTab extends Component {
                     source={require('../../src/source/searchBack.png')}
                 />
                 <Header hasTabs style={{ backgroundColor: 'transparent', height: '9%' }} />
-                <Tabs tabBarUnderlineStyle={{borderBottomWidth: 1}} renderTabBar={() => <ScrollableTab style={{borderColor: 'transparent'}} />}>
-                    <Tab  textStyle={{color: Color.grey03}} style={{ backgroundColor: 'transparent' }} heading="Playlist">
-                        <Playlist  navigation={this.props.navigation} />
+                <Tabs tabBarUnderlineStyle={{ borderBottomWidth: 1, backgroundColor: Color.green }}
+                    renderTabBar={() => 
+                    <ScrollableTab style={{ borderColor: 'transparent', backgroundColor: 'transparent' }} />
+                    }>
+                    <Tab tabStyle={{ backgroundColor: 'transparent' }}
+                        activeTabStyle={{ backgroundColor: 'transparent' }}
+                        textStyle={{ color: Color.grey03 }}
+                        style={{ backgroundColor: 'transparent' }}
+                        heading="Playlist">
+                        <Playlist  {... this.props} />
                     </Tab>
-                    <Tab textStyle={{color: Color.grey03}} style={{ backgroundColor: 'transparent' }} heading="Artist">
-                        <Artist navigation={this.props.navigation} />
+                    <Tab tabStyle={{ backgroundColor: 'transparent' }}
+                        activeTabStyle={{ backgroundColor: 'transparent' }}
+                        textStyle={{ color: Color.grey03 }}
+                        style={{ backgroundColor: 'transparent' }}
+                        heading="Artist">
+                        <Artist {... this.props} />
                     </Tab>
-                    <Tab textStyle={{color: Color.grey03}} style={{ backgroundColor: 'transparent' }} heading="Albums">
-                        <Albums navigation={this.props.navigation} />
+                    <Tab tabStyle={{ backgroundColor: 'transparent' }}
+                        activeTabStyle={{ backgroundColor: 'transparent' }}
+                        textStyle={{ color: Color.grey03 }}
+                        style={{ backgroundColor: 'transparent' }}
+                        heading="Albums">
+                        <Albums {... this.props} />
                     </Tab>
-                    <Tab textStyle={{color: Color.grey03}} style={{ backgroundColor: 'transparent' }} heading="Podcast">
-                        <Podcast navigation={this.props.navigation} />
+                    <Tab tabStyle={{ backgroundColor: 'transparent' }}
+                        activeTabStyle={{ backgroundColor: 'transparent' }}
+                        textStyle={{ color: Color.grey03 }}
+                        style={{ backgroundColor: 'transparent' }}
+                        heading="Podcast">
+                        <Podcast {... this.props} />
                     </Tab>
-                    <Tab textStyle={{color: Color.grey03}} style={{ backgroundColor: 'transparent' }} heading="Radio">
-                        <Radio navigation={this.props.navigation} />
+                    <Tab tabStyle={{ backgroundColor: 'transparent' }}
+                        activeTabStyle={{ backgroundColor: 'transparent' }}
+                        textStyle={{ color: Color.grey03 }}
+                        style={{ backgroundColor: 'transparent' }}
+                        heading="Radio">
+                        <Radio {... this.props} />
                     </Tab>
                 </Tabs>
             </Container>
         )
     }
 };
-
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        backgroundColor: Color.black
-    },
-})

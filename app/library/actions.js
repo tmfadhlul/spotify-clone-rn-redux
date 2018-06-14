@@ -5,7 +5,7 @@ export function tabPlaylist(){
         type: 'TAB_PLAYLIST',
         payload: axios({
             method: 'GET',
-            url: `http://7598c4d0.ngrok.io/api/music`
+            url: `https://04234f03.ngrok.io/api/music`
         })
     }
 }
@@ -15,7 +15,7 @@ export function tabArtist(){
         type: 'TAB_ARTIST',
         payload: axios({
             method: 'GET',
-            url: 'http://7598c4d0.ngrok.io/api/artist'
+            url: 'https://04234f03.ngrok.io/api/artist'
         })
     }
 }
@@ -25,7 +25,7 @@ export function tabAlbums(){
         type: 'TAB_ALBUMS',
         payload: axios({
             method: 'GET',
-            url: 'http://7598c4d0.ngrok.io/api/albums'
+            url: 'https://04234f03.ngrok.io/api/albums'
         })
     }
 }
