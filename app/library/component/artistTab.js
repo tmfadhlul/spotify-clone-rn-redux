@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, FlatList, Image, TouchableOpacity, ActivityIndicator, Dimensions} from 'react-native'
+import { StyleSheet, Text, FlatList, Image, TouchableOpacity, ActivityIndicator, Dimensions } from 'react-native'
 import { View, Button, Content } from 'native-base';
 import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux'
@@ -20,12 +20,11 @@ class Playlist extends Component {
     render() {
         console.log(this.props)
         return (
-            <Content>
-                { this.props.playlists.isLoading ?
-                    <View style={{height: Dimensions.get('window').height / 1.5 ,justifyContent: 'center' }}>
-                        <ActivityIndicator style={{alignSelf: 'center',}} size="large" color="#00ff00" />
-                    </View>
-                    : ( this.props.playlists.isError ? alert(this.props.playlists.artists) :
+            this.props.playlists.isLoading ?
+                <View style={{ height: Dimensions.get('window').height / 1.5, justifyContent: 'center' }}>
+                    <ActivityIndicator style={{ alignSelf: 'center', }} size="large" color="#00ff00" />
+                </View>
+                : (this.props.playlists.isError ? alert(this.props.playlists.artists) :
                     <FlatList
                         numColumns={1}
                         extraData={this.state}
@@ -49,8 +48,7 @@ class Playlist extends Component {
                         }
                         keyExtractor={item => item.id.toString()}
                     />
-                    )} 
-            </Content>
+                )
         )
     }
 };
