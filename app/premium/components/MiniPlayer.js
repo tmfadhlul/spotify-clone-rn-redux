@@ -3,10 +3,10 @@ import { TouchableOpacity, View, Text, Image, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import TrackPlayer, { ProgressComponent } from 'react-native-track-player';
 
-import { navigateTo } from '../logic/actions';
+import { navigateTo } from '../actions';
 
-import iconPlay from '../icons/play.png';
-import iconPause from '../icons/pause.png';
+import iconPlay from '../../src/source/play.png';
+import iconPause from '../../src/source/pause.png';
 
 class MiniPlayer extends ProgressComponent {
 
@@ -107,11 +107,6 @@ const styles = StyleSheet.create({
     }
 });
 
-MiniPlayer.propTypes = {
-    state: PropTypes.number,
-    track: PropTypes.object
-};
-
 function mapStateToProps(state) {
     const currentTrack = state.playback.currentTrack;
     const tracks = state.library.tracks;
@@ -122,4 +117,4 @@ function mapStateToProps(state) {
     };
 }
 
-module.exports = connect(mapStateToProps)(MiniPlayer);
+export default connect(mapStateToProps)(MiniPlayer);

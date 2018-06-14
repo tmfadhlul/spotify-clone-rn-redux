@@ -22,11 +22,6 @@ class Track extends PureComponent {
 
 }
 
-Track.propTypes = {
-    track: PropTypes.object.isRequired,
-    onPress: PropTypes.func.isRequired
-};
-
 const styles = StyleSheet.create({
     track: {
         flexDirection: 'row',
@@ -53,4 +48,4 @@ const styles = StyleSheet.create({
     }
 });
 
-module.exports = Track;
+export default Track;

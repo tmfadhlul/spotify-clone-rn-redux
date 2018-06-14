@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native';
 import TrackPlayer, { ProgressComponent } from 'react-native-track-player';
 
-import { formatTime } from '../logic/utils';
+import { formatTime } from '../utils';
 
 class ProgressBar extends ProgressComponent {
 
@@ -62,4 +62,4 @@ const styles = StyleSheet.create({
     }
 });
 
-module.exports = ProgressBar;
+export default ProgressBar;

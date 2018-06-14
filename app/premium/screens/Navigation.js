@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { BackHandler } from 'react-native';
 import { connect } from 'react-redux';
 
-import { navigateTo } from '../logic/actions';
+import { navigateTo } from '../actions';
 import LibraryScreen from './LibraryScreen';
 import NowPlayingScreen from './NowPlayingScreen';
 
@@ -39,14 +39,10 @@ class Navigation extends Component {
 
 }
 
-Navigation.propTypes = {
-    currentScreen: PropTypes.string
-};
-
 function mapStateToProps(state) {
     return {
         currentScreen: state.currentScreen
     };
 }
 
-module.exports = connect(mapStateToProps)(Navigation);
+export default connect(mapStateToProps)(Navigation);

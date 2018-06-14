@@ -11,7 +11,7 @@ class Header extends PureComponent {
                     backgroundColor="#0288D1"
                     barStyle="light-content"
                 />
-                <Text style={styles.title}>Demo App</Text>
+                <Text style={styles.title}>Track</Text>
                 <CastButton color="#ffffff" />
             </View>
         );
@@ -40,4 +40,4 @@ const styles = StyleSheet.create({
     }
 });
 
-module.exports = Header;
+export default Header;

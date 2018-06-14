@@ -44,6 +44,6 @@ async function eventHandler(store, data) {
     }
 };
 
-module.exports = function(store) {
+export default function(store) {
     return eventHandler.bind(null, store);
 };

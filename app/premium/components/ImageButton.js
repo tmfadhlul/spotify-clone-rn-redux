@@ -15,4 +15,4 @@ class ImageButton extends PureComponent {
 
 }
 
-module.exports = ImageButton;
+export default ImageButton;

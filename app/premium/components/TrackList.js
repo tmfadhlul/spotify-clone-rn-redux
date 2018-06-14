@@ -3,7 +3,7 @@ import { View, FlatList, ActivityIndicator, Text } from 'react-native';
 import { connect } from 'react-redux';
 
 import Track from './Track';
-import { fetchLibrary } from '../logic/actions';
+import { fetchLibrary } from '../actions';
 
 import TrackPlayer from 'react-native-track-player';
 
@@ -54,12 +54,7 @@ class TrackList extends Component {
 
 }
 
-TrackList.propTypes = {
-    tracks: PropTypes.array,
-    fetching: PropTypes.bool,
-    error: PropTypes.string,
-    dispatch: PropTypes.func.isRequired
-};
+console.log(this.props)
 
 function mapStateToProps(state) {
     return {
@@ -69,4 +64,4 @@ function mapStateToProps(state) {
     };
 }
 
-module.exports = connect(mapStateToProps)(TrackList);
+export default connect(mapStateToProps)(TrackList);

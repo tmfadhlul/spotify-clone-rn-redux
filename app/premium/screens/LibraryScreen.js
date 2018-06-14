@@ -34,4 +34,4 @@ const styles = StyleSheet.create({
     }
 });
 
-module.exports = LibraryScreen;
+export default LibraryScreen;

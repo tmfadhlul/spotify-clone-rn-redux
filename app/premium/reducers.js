@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 import {
     UPDATE_LIBRARY,
     LIBRARY_STATUS,
@@ -59,8 +58,8 @@ function screenReducer(state = 'library', action) {
     }
 }
 
-module.exports = combineReducers({
-    library: libraryReducer,
-    playback: playbackReducer,
-    currentScreen: screenReducer
-});
+export {
+    libraryReducer,
+    playbackReducer,
+    screenReducer
+}

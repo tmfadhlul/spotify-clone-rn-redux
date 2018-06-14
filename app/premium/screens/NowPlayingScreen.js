@@ -9,13 +9,13 @@ import TrackPlayer from 'react-native-track-player';
 import ImageButton from '../components/ImageButton';
 import ProgressBar from '../components/ProgressBar';
 
-import { navigateTo } from '../logic/actions';
+import { navigateTo } from '../actions';
 
-import iconArrow from '../icons/arrow.png';
-import iconPlay from '../icons/play.png';
-import iconPause from '../icons/pause.png';
-import iconPrevious from '../icons/previous.png';
-import iconNext from '../icons/next.png';
+import iconArrow from '../../src/source/arrow.png';
+import iconPlay from '../../src/source/play.png';
+import iconPause from '../../src/source/pause.png';
+import iconPrevious from '../../src/source/previous.png';
+import iconNext from '../../src/source/next.png';
 
 /**
  * A screen dedicated to show what is playing
@@ -175,11 +175,6 @@ const styles = StyleSheet.create({
     }
 });
 
-NowPlayingScreen.propTypes = {
-    state: PropTypes.number,
-    track: PropTypes.object
-};
-
 function mapStateToProps(state) {
     const currentTrack = state.playback.currentTrack;
     const tracks = state.library.tracks;
@@ -190,4 +185,4 @@ function mapStateToProps(state) {
     };
 }
 
-module.exports = connect(mapStateToProps)(NowPlayingScreen);
+export default connect(mapStateToProps)(NowPlayingScreen);
