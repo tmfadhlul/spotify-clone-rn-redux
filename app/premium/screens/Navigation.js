@@ -6,10 +6,6 @@ import { navigateTo } from '../actions';
 import LibraryScreen from './LibraryScreen';
 import NowPlayingScreen from './NowPlayingScreen';
 
-/**
- * A really simple navigation component
- * This can be definitely improved
- */
 class Navigation extends Component {
 
     componentDidMount() {

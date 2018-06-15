@@ -7,8 +7,9 @@ class Track extends PureComponent {
         return (
             <TouchableOpacity onPress={this.props.onPress}>
                 <View style={styles.track}>
+                    {console.log(this.props.track)}
                     <Image
-                        source={{uri: this.props.track.artwork}}
+                        source={{ uri: this.props.track.artwork }}
                         style={styles.artwork}
                     />
                     <View style={styles.info}>

@@ -5,6 +5,7 @@ import { Icon } from 'native-base';
 import Header from '../components/Header';
 import TrackList from '../components/TrackList';
 import MiniPlayer from '../components/MiniPlayer';
+import { Color } from '../../index';
 
 export default class PremiumScreen extends PureComponent {
     static navigationOptions = {
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         justifyContent: 'space-between',
-        backgroundColor: '#333333'
+        backgroundColor: Color.black
     },
     list: {
         flex: 1

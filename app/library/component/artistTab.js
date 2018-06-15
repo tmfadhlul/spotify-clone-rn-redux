@@ -61,11 +61,6 @@ const mapStateToProps = (state) => {
 
 export default connect(mapStateToProps)(Playlist);
 
-const navigateAction = NavigationActions.navigate({
-    routeName: 'LoginScreen',
-});
-
-
 const styles = StyleSheet.create({
     buttonRegist: {
         backgroundColor: 'white',

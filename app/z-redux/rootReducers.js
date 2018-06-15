@@ -4,9 +4,9 @@ import { combineReducers } from 'redux'
 import tabPlaylistReducer from '../library/reducers'
 import nav from './nav'
 import {
-  playbackReducer as library,
+  playbackReducer as playback,
   screenReducer as currentScreen, 
-  libraryReducer as playback,
+  libraryReducer as library,
 } from '../premium/reducers'
 
 const appReducer = combineReducers({

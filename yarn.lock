@@ -1841,6 +1841,12 @@ dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
 
+dom7@^2.0.6:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/dom7/-/dom7-2.0.7.tgz#43940bff361cc0e5f38c349b055fd60c10309b89"
+  dependencies:
+    ssr-window "^1.0.0"
+
 domexception@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/domexception/-/domexception-1.0.1.tgz#937442644ca6a31261ef36e3ec677fe805582c90"
@@ -4397,14 +4403,14 @@ react-native-vector-icons@~4.5.0:
     prop-types "^15.5.10"
     yargs "^8.0.2"
 
-react-native-video@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-2.1.1.tgz#cb07d911a24292a04279478722be1076ebc0ac6e"
+react-native-video@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-2.2.0.tgz#13535a6fd7e2fde5a498a771db5b8c2a2d16cb0f"
   dependencies:
     keymirror "0.1.1"
     prop-types "^15.5.10"
 
-react-native@0.55.4:
+react-native@^0.55.4:
   version "0.55.4"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.55.4.tgz#eecffada3750a928e2ddd07cf11d857ae9751c30"
   dependencies:
@@ -4629,6 +4635,10 @@ redux-logger@^3.0.6:
 redux-promise-middleware@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/redux-promise-middleware/-/redux-promise-middleware-5.1.1.tgz#37689339a58a33d1fda675ed1ba2053a2d196b8d"
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
 
 redux@^4.0.0:
   version "4.0.0"
@@ -5099,6 +5109,10 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
+ssr-window@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-1.0.0.tgz#8ed1b6beaa0a371ba7e74d6515d584c3f1cf973c"
+
 stack-utils@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.1.tgz#d4f33ab54e8e38778b0ca5cfd3b3afb12db68620"
@@ -5207,6 +5221,13 @@ supports-color@^5.3.0:
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.4.0.tgz#1c6b337402c2137605efe19f10fec390f6faab54"
   dependencies:
     has-flag "^3.0.0"
+
+swiper@^4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.3.3.tgz#92e39c806ead23a18e5c3251dfba1ae9ce76270e"
+  dependencies:
+    dom7 "^2.0.6"
+    ssr-window "^1.0.0"
 
 symbol-observable@^1.2.0:
   version "1.2.0"

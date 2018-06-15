@@ -2,13 +2,15 @@ import React, { PureComponent } from 'react';
 import { View, Text, StyleSheet, StatusBar, Platform } from 'react-native';
 import { CastButton } from 'react-native-track-player';
 
+import { Color } from '../../index'
+
 class Header extends PureComponent {
 
     render() {
         return (
             <View style={styles.bar}>
                 <StatusBar
-                    backgroundColor="#0288D1"
+                    backgroundColor= {Color.grey01}
                     barStyle="light-content"
                 />
                 <Text style={styles.title}>Track</Text>
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         alignItems: 'center',
-        backgroundColor: '#03A9F4',
+        backgroundColor: Color.grey01,
         height: 56,
         elevation: 5,
         borderTopWidth: Platform.OS == 'ios' ? 20 : 0,
@@ -32,11 +34,10 @@ const styles = StyleSheet.create({
     },
     title: {
         flex: 1,
-        fontSize: 20,
-        fontWeight: '500',
+        fontSize: 17,
         color: '#ffffff',
-        paddingLeft: 16,
-        paddingRight: 16
+        alignSelf: 'center',
+        textAlign: 'center'
     }
 });
 

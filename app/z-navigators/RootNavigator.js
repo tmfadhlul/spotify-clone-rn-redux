@@ -20,7 +20,7 @@ const BottomStack = createBottomTabNavigator(
     Library: {
       screen: LibraryScreen,
     },
-    Premium: {
+    Track: {
       screen: PremiumScreen,
       navigationOptions: {
         header: true

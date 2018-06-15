@@ -9,6 +9,8 @@ import TrackPlayer from 'react-native-track-player';
 
 class TrackList extends Component {
 
+    state = { selected: (new Map(): Map<string, boolean>) };
+
     componentDidMount() {
         this.props.dispatch(fetchLibrary());
     }
@@ -37,7 +39,7 @@ class TrackList extends Component {
             return (
                 <ActivityIndicator
                     size="large"
-                    color="#03A9F4"
+                    color="#1db954"
                     style={{margin: 50}}
                 />
             );
@@ -51,12 +53,9 @@ class TrackList extends Component {
             />
         );
     }
-
 }
 
-console.log(this.props)
-
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
     return {
         tracks: state.library.tracks,
         fetching: state.library.fetching,
