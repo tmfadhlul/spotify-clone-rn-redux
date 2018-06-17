@@ -48,10 +48,9 @@ $ npm run-android
 [![Spotify Clone](https://i.ytimg.com/vi/Hw_pQ8CAtxE/3.jpg?time=1529224282719su)](https://www.youtube.com/watch?v=Hw_pQ8CAtxE&feature=youtu.be)
 
 ## Powered by
-
-![https://dumbways.id](https://avatars2.githubusercontent.com/u/34464790?s=200&v=4)
-
-![https://arkademy.com](http://www.arkademy.com/asset/images/ico_logo.png)
+.                        |  .  
+:-------------------------:|:-------------------------:
+![https://dumbways.id](https://avatars2.githubusercontent.com/u/34464790?s=200&v=4) | ![https://arkademy.com](http://www.arkademy.com/asset/images/ico_logo.png)
 
 ## Authors
 
