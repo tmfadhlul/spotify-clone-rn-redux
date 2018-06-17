@@ -42,7 +42,7 @@ $ nodemon index
 ```
 
 ## Screenshot
-.                          |  .                        |  .                        |  .  
+<!-- .                          |  .                        |  .                        |  .   -->
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![screenshots1](https://image.ibb.co/cPfb7y/ss_1.png)  |  ![screenshots2](https://image.ibb.co/cFnjud/ss_2.png)  |  ![screenshots3](https://image.ibb.co/esh0Zd/ss_3.png)  |  ![screenshots4](https://image.ibb.co/c6SCfJ/ss_4.png)
 ![screenshots5](https://image.ibb.co/iiVtny/ss_5.png)  |  ![screenshots6](https://image.ibb.co/bSMuud/ss_6.png)  |  ![screenshots7](https://image.ibb.co/hKpsfJ/ss_7.png)  |  ![screenshots8](https://image.ibb.co/e33USy/ss_8.png)
