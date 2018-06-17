@@ -46,7 +46,7 @@ $ nodemon index
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![screenshots1](https://image.ibb.co/cPfb7y/ss_1.png)  |  ![screenshots2](https://image.ibb.co/cFnjud/ss_2.png)  |  ![screenshots3](https://image.ibb.co/esh0Zd/ss_3.png)  |  ![screenshots4](https://image.ibb.co/c6SCfJ/ss_4.png)
 ![screenshots5](https://image.ibb.co/iiVtny/ss_5.png)  |  ![screenshots6](https://image.ibb.co/bSMuud/ss_6.png)  |  ![screenshots7](https://image.ibb.co/hKpsfJ/ss_7.png)  |  ![screenshots8](https://image.ibb.co/e33USy/ss_8.png)
-![screenshots9](https://image.ibb.co/cSroLJ/ss_9.png)  |  ![screenshots10](https://image.ibb.co/kLv4ud/ss_10.png)  |  ![screenshots11](https://image.ibb.co/gQtDny/ss_11.png)  | =
+![screenshots9](https://image.ibb.co/cSroLJ/ss_9.png)  |  ![screenshots10](https://image.ibb.co/kLv4ud/ss_10.png)  |  ![screenshots11](https://image.ibb.co/gQtDny/ss_11.png)  |  ![screenshots12](https://image.ibb.co/ewStHo/Screenshot_2018_06_07_10_50_19.png)=
 
 ## Video
 [![Spotify Clone](https://img.youtube.com/vi/pvySeI_kx7s/0.jpg)](https://www.youtube.com/watch?v=pvySeI_kx7s)
