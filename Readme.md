@@ -49,7 +49,7 @@ $ nodemon index
 ![screenshots9](https://image.ibb.co/cSroLJ/ss_9.png)  |  ![screenshots10](https://image.ibb.co/kLv4ud/ss_10.png)  |  ![screenshots11](https://image.ibb.co/gQtDny/ss_11.png)  |  ![screenshots12](https://image.ibb.co/ewStHo/Screenshot_2018_06_07_10_50_19.png)
 
 ## Video
-[![Spotify Clone](https://img.youtube.com/vi/pvySeI_kx7s/0.jpg)](https://www.youtube.com/watch?v=Hw_pQ8CAtxE&feature=youtu.be)
+[![Spotify Clone](https://i.ytimg.com/vi/Hw_pQ8CAtxE/3.jpg?time=1529224282719)](https://www.youtube.com/watch?v=Hw_pQ8CAtxE&feature=youtu.be)
 
 ## Powered by
 
