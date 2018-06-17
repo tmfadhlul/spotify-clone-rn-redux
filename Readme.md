@@ -55,3 +55,6 @@ $ npm run-android
 ## Authors
 
 * **Teuku Fadhlul** - Made For Practice 
+
+## License 
+This project is licensed under the MIT License.
