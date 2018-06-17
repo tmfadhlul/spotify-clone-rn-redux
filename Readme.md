@@ -13,8 +13,12 @@ Spotify Clone is a clone app of https://www.spotify.com. It use React Native as 
 
 ## Technology
 
-1. React Native
-2. Django
+1. React Native (Mobile Apps)
+2. Django (Rest Api)
+3. NGINX (Web Server)
+4. Mysql (Database)
+5. Redux Thunk
+6. Axios
 
 ## Installation 
 
@@ -33,14 +37,6 @@ $ npm install
 $ npm run-android
 ```
 
-**API:**
-
-```
-$ cd bukalapak-clone/bukalapak-api
-$ npm install 
-$ nodemon index
-```
-
 ## Screenshot
 .                          |  .                        |  .                        |  .  
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
@@ -49,7 +45,7 @@ $ nodemon index
 ![screenshots9](https://image.ibb.co/cSroLJ/ss_9.png)  |  ![screenshots10](https://image.ibb.co/kLv4ud/ss_10.png)  |  ![screenshots11](https://image.ibb.co/gQtDny/ss_11.png)  |  ![screenshots12](https://image.ibb.co/ewStHo/Screenshot_2018_06_07_10_50_19.png)
 
 ## Video
-[![Spotify Clone](https://i.ytimg.com/vi/Hw_pQ8CAtxE/3.jpg?time=1529224282719)](https://www.youtube.com/watch?v=Hw_pQ8CAtxE&feature=youtu.be)
+[![Spotify Clone](https://i.ytimg.com/vi/Hw_pQ8CAtxE/3.jpg?time=1529224282719su)](https://www.youtube.com/watch?v=Hw_pQ8CAtxE&feature=youtu.be)
 
 ## Powered by
 
