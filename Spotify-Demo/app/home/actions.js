@@ -5,7 +5,7 @@ export function allTracks(){
         type: 'ALL_TRACKS',
         payload: axios({
             method: 'GET',
-            url: 'http://54.74.103.26/api/music'
+            url: 'http://52.74.103.26/api/music'
         })
     }
 }

@@ -5,7 +5,7 @@ export function tabPlaylist(){
         type: 'TAB_PLAYLIST',
         payload: axios({
             method: 'GET',
-            url: `http://54.74.103.26/api/music`
+            url: `http://52.74.103.26/api/music`
         })
     }
 }
@@ -15,7 +15,7 @@ export function tabArtist(){
         type: 'TAB_ARTIST',
         payload: axios({
             method: 'GET',
-            url: 'http://54.74.103.26/api/artist'
+            url: 'http://52.74.103.26/api/artist'
         })
     }
 }
@@ -25,7 +25,7 @@ export function tabAlbums(){
         type: 'TAB_ALBUMS',
         payload: axios({
             method: 'GET',
-            url: 'http://54.74.103.26/api/albums'
+            url: 'http://52.74.103.26/api/albums'
         })
     }
 }
@@ -35,7 +35,7 @@ export function creatTabPlaylist(value){
         type: 'CREATE_TAB_PLAYLIST',
         payload: axios({
             method: 'POST',
-            url: 'http://54.74.103.26/api/music/',
+            url: 'http://52.74.103.26/api/music/',
             data: value
         })
     }
