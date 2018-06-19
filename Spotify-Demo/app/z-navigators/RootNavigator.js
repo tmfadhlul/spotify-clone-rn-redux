@@ -1,11 +1,9 @@
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
-import {play} from '../library/component/'
 import { LoginScreen, RegisterScreen, WelcomeScreen } from '../welcome/screens/index';
 import { HomeScreen } from '../home/screens/index';
 import { LibraryScreen, playlistList } from '../library/screens/';
 import { SearchScreen } from '../search/screens/index';
 import { PremiumScreen } from '../premium/screens/index';
-import Music from '../music/screens/main';
 import { Color, Layout } from '.././index';
 
 
