@@ -5,6 +5,7 @@ import { LibraryScreen, playlistList } from '../library/screens/';
 import { SearchScreen } from '../search/screens/index';
 import { PremiumScreen } from '../premium/screens/index';
 import { Color, Layout } from '.././index';
+import NowPlayingScreen from '../premium/screens/NowPlayingScreen'
 
 
 const BottomStack = createBottomTabNavigator(
@@ -108,6 +109,12 @@ const RootNavigator = createStackNavigator(
     },
     Apps: {
       screen: BottomStack,
+      navigationOptions: {
+        header: null
+      }
+    },
+    NowPlaying: {
+      screen: NowPlayingScreen,
       navigationOptions: {
         header: null
       }
