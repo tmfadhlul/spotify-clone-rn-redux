@@ -2,7 +2,7 @@
 
 Spotify Clone is a clone app of https://www.spotify.com. It use React Native as the frontend and Express as the Backend. I am working this app at https://dumbways.id and https://arkademy.com Bootcamp class. Feels free to contribute to make this app better.
 
-![gif](https:///github.com/dickyindra/bukalapak-clone/blob/master/New-Project.gif)
+![gif](https://github.com/tmfadhlul/react-redux-spotify/blob/master/Demo.gif)
 
 ## Feature
 
