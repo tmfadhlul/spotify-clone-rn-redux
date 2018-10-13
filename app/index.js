@@ -1,4 +1,4 @@
-const Color = {
+export const Color = {
     white: "#ffffff",
     grey03: "#b3b3b3",
     black: "#121212",
@@ -7,7 +7,7 @@ const Color = {
     green: "#1db954",
 }
 
-const Layout = {
+export const Layout = {
     title: {
         zIndex: 0 ,
         fontWeight: '100' ,
@@ -16,7 +16,8 @@ const Layout = {
         textAlign: 'center',
         backgroundColor: 'transparent',
         color: 'white',
-}
+    }
 }
 
-export { Color, Layout }
+export { default as HomeScreen } from './home'
+export { default as WelcomeScreen } from './welcome'

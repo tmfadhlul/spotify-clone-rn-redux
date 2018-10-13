@@ -1,11 +1,13 @@
 import axios from 'axios';
 
+import { API_URL } from 'app/config'
+
 export function allTracks(){
     return {
         type: 'ALL_TRACKS',
         payload: axios({
             method: 'GET',
-            url: 'http://52.74.103.26/api/music'
+            url: `${API_URL}/api/music`
         })
     }
 }

@@ -1,9 +1,3 @@
-import LoginScreen from './login';
-import RegisterScreen from './register';
-import WelcomeScreen from './welcome';
-
-export {
-    LoginScreen,
-    RegisterScreen,
-    WelcomeScreen
-}
+export { default as LoginScreen } from './login'
+export { default as RegisterScreen } from './register'
+export { default as WelcomeScreen } from './welcome'

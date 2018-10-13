@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, Image, ImageBackground, Dimensions } from 'react-native';
-import { Content, Button, View, Container } from 'native-base';
-import Video from 'react-native-video';
-import Swiper from 'react-native-swiper';
+import { View } from 'native-base'
+import Video from 'react-native-video'
+import React, { Component } from 'react'
+import { StyleSheet } from 'react-native'
 
-import { Slider, WelcomeHeader } from '../component/zIndex';
-import { WelcomeBtn } from '../component/button';
-import LightVideo from "../../src/raw/roomies.mp4";
+import { Slider, WelcomeHeader } from '../component'
+import { WelcomeBtn } from '../component/button'
+import LightVideo from "../../src/raw/roomies.mp4"
 
-const Width = Dimensions.get('window').width
-const Height = Dimensions.get('window').height
 
 export default class WelcomeScreen extends Component {
     render() {
@@ -24,4 +21,4 @@ export default class WelcomeScreen extends Component {
             </View>
         )
     }
-};
+}

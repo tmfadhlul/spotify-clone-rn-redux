@@ -15,7 +15,7 @@ const store = createStore(
   reducers,
   applyMiddleware(
     middleware,
-    logger,
+    // logger,
     promiseMiddleware(),
     thunkMiddleware
   ),

@@ -20,11 +20,15 @@ class Playlist extends Component {
     render() {
         console.log(this.props)
         return (
-            this.props.playlists.isLoading ?
+            this.props.playlists.isLoading && !this.props.playlists.artists ?
                 <View style={{ height: Dimensions.get('window').height / 1.5, justifyContent: 'center' }}>
                     <ActivityIndicator style={{ alignSelf: 'center', }} size="large" color="#00ff00" />
                 </View>
-                : (this.props.playlists.isError ? alert(this.props.playlists.artists) :
+                : (this.props.playlists.isError ? (
+                    <View style={{alignContent: 'center', }} >
+                        <Text style={{ color: 'white', fontSize: 18 }} >Data Kosong</Text>
+                    </View>
+                ) :
                     <FlatList
                         numColumns={1}
                         extraData={this.state}
