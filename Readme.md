@@ -1,6 +1,6 @@
 # Spotify Clone
 
-Spotify Clone is a clone app of https://www.spotify.com. It use React Native as the frontend and Djanggo as the Backend. I am working this app at https://dumbways.id and https://arkademy.com Bootcamp class. Feels free to contribute to make this app better.
+Spotify Clone is a clone app of https://www.spotify.com. It use React Native as the frontend and Djanggo as the Backend. I am working this app for learning purpose. Feels free to contribute to make this app better.
 
 ![gif](https://github.com/tmfadhlul/react-redux-spotify/blob/master/Demo.gif)
 
@@ -46,11 +46,6 @@ $ npm run-android
 
 ## Video
 [![Spotify Clone](https://i.ytimg.com/vi/Hw_pQ8CAtxE/3.jpg?time=1529224282719su)](https://www.youtube.com/watch?v=Hw_pQ8CAtxE&feature=youtu.be)
-
-## Powered by
-.                        |  .  
-:-------------------------:|:-------------------------:
-![https://dumbways.id](https://avatars2.githubusercontent.com/u/34464790?s=200&v=4) | ![https://arkademy.com](http://www.arkademy.com/asset/images/ico_logo.png)
 
 ## Authors
 
